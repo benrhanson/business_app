@@ -1,10 +1,11 @@
-  <header class = "navbar navbar-fixed-top navbar-inverse">
+  <header class = "navbar navbar-fixed-top navbar-inverse container-fluid">
     <div class = "container">
-      <p>Logo Goes Here</p>
       <nav>
-        <ul class = "nav navbar-nav navbar-right">
-          <li><%= link_to "Home", "#" %></li>
-          <li><%= link_to "Help", "#" %></li>
+        <p class = "logo">Logo Goes Here</p> 
+        <!--navbar-->
+          <ul class = "nav navbar-nav navbar-right collapse navbar-collapse">
+            <li><%= link_to "Home", "#" %></li>
+            <li><%= link_to "Help", "#" %></li>
           <!--Shows up if user is logged in -->
             <li><%= link_to "Users", "#" %></li>
             <!--<li class = "dropdown">-->
@@ -19,7 +20,7 @@
             <!--  </ul>-->
             <!--</li>-->
           <!--shows up if user is NOT logged in  -->
-        </ul>
+          </ul>          
       </nav>
     </div>
   </header>

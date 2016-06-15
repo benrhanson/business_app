@@ -11,7 +11,6 @@ class CreateUsers < ActiveRecord::Migration
       t.string :zip_code
       t.string :city
       t.string :state
-      t.string :team
       t.string :career
       t.string :experience
       t.string :years_at_job

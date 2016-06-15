@@ -1,7 +1,62 @@
-<div class = "main">
+<% provide(:title, 'Sign up') %>
+<div class = "signup_form">
   <h1>Sign Up</h1>
-  <p>Sign up form will go here.</p> 
   
+  <div class = "row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user) do |f| %>
+    <%= render 'shared/error_messages' %>
+
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name, class: 'form-control'%>
+
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name, class: 'form-control'%>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control'%>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control'%>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation, class: 'form-control'%>
+      
+      <%= f.label :phone %>
+      <%= f.text_field :phone, class: 'form-control'%>
+      
+      <%= f.label :address %>
+      <%= f.text_field :address, class: 'form-control'%>   
+
+      <%= f.label :city %>
+      <%= f.text_field :city, class: 'form-control'%>
+      
+      <%= f.label :state %>
+      <%= f.text_field :state, class: 'form-control'%>
+      
+      <%= f.label :zip_code %>
+      <%= f.text_field :zip_code, class: 'form-control'%>
+      
+      <%= f.label :career %>
+      <%= f.text_field :career, class: 'form-control'%>
+      
+      <%= f.label :experience %>
+      <%= f.text_field :experience, class: 'form-control'%>  
+      
+      <%= f.label :Years_At_Current_Job %>
+      <%= f.text_field :years_at_job, class: 'form-control'%>
+      
+      <%= f.label :bio %>
+      <%= f.text_area :bio, cols: "30", rows: "10", class: 'form-control'%>
+      
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+    
+    
+    
+    
+  </div>
   
   
   

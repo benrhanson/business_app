@@ -1,0 +1,21 @@
+<div class = 'profile'>
+  <div class = 'avatar col-md-4'>
+    AN IMAGE WILL GO HERE.
+  </div>
+  <div class = "col-md-1"></div>
+  <div class = "profile col-md-7">
+    <h2><%= @user.first_name + " " + @user.last_name %></h2>
+    <hr>
+    <h3>Job Info</h3>
+    <p>Career: <%= @user.career %></p>
+    <p>Experience: <%= @user.experience %></p>
+    <!--Style these later-->
+    <h3>Contact Info</h3>
+    <p>Phone Number: <%= @user.phone %></p>
+    <p>Email: <%= @user.email %></p>
+    <p>Address: <%= @user.address%></p>
+    <p><%= @user.city + " " + @user.state + " " + @user.zip_code%></p>    
+  </div>
+</div>
+
+<p>This page will eventually only be viewable by members of the same team.</p>

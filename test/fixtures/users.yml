@@ -1,3 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-#empty
+yorgi: 
+  first_name: Yorgi
+  last_name: Yorgeson
+  email: yorgi@yorg.org
+  password_digest: <%= User.digest('password') %>
+  phone: 555-123-4567
+  address: 123 anywhere road
+  zip_code: 99999
+  city: Anytown
+  state: CA
+  career: Fish Monger
+  experience: 10 years
+  years_at_job: 5 years
+  bio: I sell fish at the dock. Sometimes I also catch crabs.

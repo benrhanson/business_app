@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'sessions/new'
+
   # pages related to the welcome/signup process
   
   get 'welcome' => 'static_pages#welcome'
@@ -11,6 +13,13 @@ Rails.application.routes.draw do
   resources :users
   
   root 'users#new'
-  # root page will be the log in page, not the signup pages.
+  
+  get 'login' => 'sessions#new'
+  
+  post 'login' => 'sessions#create'
+  
+  delete 'logout' => 'sessions#destroy'
+  
+  # root page will eventually be the log in page, not the signup pages.
 
 end

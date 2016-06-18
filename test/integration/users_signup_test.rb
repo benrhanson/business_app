@@ -42,6 +42,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                bio: "I ran for President, lost to Bill Clinton. I was a Senator for Kanasas from 1969-1996." }
     end
     assert_template 'users/show'
+    assert is_logged_in?
   end
   
 end

@@ -14,3 +14,18 @@ yorgi:
   experience: 10 years
   years_at_job: 5 years
   bio: I sell fish at the dock. Sometimes I also catch crabs.
+
+batman: 
+  first_name: Bruce
+  last_name: Wayne
+  email: batman@wayne.com
+  password_digest: <%= User.digest('password') %>
+  phone: 555-123-4567
+  address: 123 anywhere road
+  zip_code: 99999
+  city: Gotham
+  state: NY
+  career: Superhero
+  experience: 10 years
+  years_at_job: 5 years
+  bio: MY PARENTS ARE DEAD. I'M ALSO A CEO.

@@ -1,6 +1,12 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:edit, :update]  
+  before_action :logged_in_user, only: [:index, :edit, :update]  
   before_action :correct_user,   only: [:edit, :update]  
+  
+  # index page
+  def index
+    # will eventually fix this to only show users in the same group
+    @users = User.paginate(page: params[:page])
+  end
   
   # displays the signed in user
   def show

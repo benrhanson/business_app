@@ -29,3 +29,20 @@ batman:
   experience: 10 years
   years_at_job: 5 years
   bio: MY PARENTS ARE DEAD. I'M ALSO A CEO.
+  
+<% 30.times do |n| %>
+user_<%= n %>:
+  first_name:  <%= "User #{n}" %>
+  last_name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+  phone: "444-444-5555"
+  address: "123 nowhere ave"
+  zip_code: "99999"
+  city: "Springfield"
+  state: "Unknown"
+  career: "Something"
+  experience: "5 years"
+  years_at_job: "3 years"
+  bio: "I have a job of some sort."
+<% end %>  

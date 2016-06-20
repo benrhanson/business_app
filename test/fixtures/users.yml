@@ -14,6 +14,7 @@ yorgi:
   experience: 10 years
   years_at_job: 5 years
   bio: I sell fish at the dock. Sometimes I also catch crabs.
+  admin: true
 
 batman: 
   first_name: Bruce

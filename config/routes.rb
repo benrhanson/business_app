@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'teams/new'
+
   get 'sessions/new'
 
   # pages related to the welcome/signup process

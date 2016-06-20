@@ -6,6 +6,10 @@
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@user) do |f| %>
     <%= render 'shared/error_messages' %>
+    
+      <%= f.label :Your_Team %>
+      (This is temporary. For Kirkland, enter "2", for Bellevue, enter "3", for Bothell, enter "1.")
+      <%= f.text_field :team_id, class: 'form-control'%>      
 
       <%= f.label :first_name %>
       <%= f.text_field :first_name, class: 'form-control'%>

@@ -58,4 +58,13 @@ class UsersControllerTest < ActionController::TestCase
     assert_redirected_to root_url
   end 
   
+  # test "should redirect show when viewing the profile of a user from another team unless user is an admin" do
+  #   log_in_as(@other_user)
+  #   if @user.team_id == @other_user.team_id
+  #     get :show
+  #   else
+  #     assert_redirected_to login_url
+  #   end
+  # end
+  
 end

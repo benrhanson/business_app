@@ -5,8 +5,13 @@ class UsersController < ApplicationController
   
   # index page
   def index
-    # will eventually fix this to only show users in the same group
-    @users = User.paginate(page: params[:page])
+    # if user is an admin, show all members from all teams. If user is not an admin, they only get to see their own team.
+    if @current_user.admin == true
+      @users = User.paginate(page: params[:page])
+    else
+      @filter = User.where(team_id: current_user.team_id).all
+      @users = @filter.paginate(page: params[:page])
+    end
   end
   
   # displays the signed in user
